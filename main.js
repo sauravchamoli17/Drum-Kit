@@ -1,3 +1,4 @@
+// Play audio on keydown 
 function playSound(e) {
     const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
     const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
@@ -7,6 +8,7 @@ function playSound(e) {
     key.classList.add('playing');
 }
 
+// Function to Remove Playing Class After Transition  
 function removeTransition(e) {
     if (e.propertyName !== 'transform') return; //skip it if it's not a transform
     this.classList.remove('playing');
