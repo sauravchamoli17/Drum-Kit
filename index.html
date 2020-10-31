@@ -6,58 +6,57 @@
     <link rel="icon" href="drum.png" type="icon">
     <link rel="stylesheet" href="tailwind.css">
     <link rel="stylesheet" href="main.css">
-    <title>Drum Kit</title>
+    <title>Drum Kit 🥁</title>
 </head>
-<body>
+<body class="h-24 bg-gradient-to-r from-green-400 to-teal-400 h-screen">
+
     <!-- Drum Keys -->
-   <div class="keys">
-       <div class="key" data-key="65">
-           <kbd>A</kbd>
-           <span class="sound">clap</span>
+     <div class="keys flex items-center justify-between mx-auto w-4/5 h-full">
+       <div class="key flex flex-col w-20 border-white border-2 rounded cursor-pointer" data-key="65">
+           <kbd class="text-white text-6xl text-center h-20">A</kbd>
+           <span class="sound text-white text-sm text-center uppercase">clap</span>
        </div>
        
-       <div class="key" data-key="83">
-           <kbd>S</kbd>
-           <span class="sound">hihat</span>
+       <div class="key flex flex-col w-20 border-white border-2 rounded cursor-pointer" data-key="83">
+           <kbd class="text-white text-6xl text-center h-20">S</kbd>
+           <span class="sound text-white text-sm text-center uppercase">hihat</span>
        </div>
        
-       <div class="key" data-key="68">
-           <kbd>D</kbd>
-           <span class="sound">kick</span>
+       <div class="key flex flex-col w-20 border-white border-2 rounded cursor-pointer" data-key="68">
+           <kbd class="text-white text-6xl text-center h-20">D</kbd>
+           <span class="sound text-white text-sm text-center uppercase">kick</span>
        </div>
        
-       <div class="key" data-key="70">
-           <kbd>F</kbd>
-           <span class="sound">openhat</span>
+       <div class="key flex flex-col w-20 border-white border-2 rounded cursor-pointer" data-key="70">
+           <kbd class="text-white text-6xl text-center h-20">F</kbd>
+           <span class="sound text-white text-sm text-center uppercase">openhat</span>
        </div>
        
-       <div class="key" data-key="71">
-           <kbd>G</kbd>
-           <span class="sound">boom</span>
+       <div class="key flex flex-col w-20 border-white border-2 rounded cursor-pointer" data-key="71">
+           <kbd class="text-white text-6xl text-center h-20">G</kbd>
+           <span class="sound text-white text-sm text-center uppercase">boom</span>
        </div>
        
-       <div class="key" data-key="72">
-           <kbd>H</kbd>
-           <span class="sound">ride</span>
+       <div class="key flex flex-col w-20 border-white border-2 rounded cursor-pointer" data-key="72">
+           <kbd class="text-white text-6xl text-center h-20">H</kbd>
+           <span class="sound text-white text-sm text-center uppercase">ride</span>
        </div>
        
-       <div class="key" data-key="74">
-           <kbd>J</kbd>
-           <span class="sound">snare</span>
+       <div class="key flex flex-col w-20 border-white border-2 rounded cursor-pointer" data-key="74">
+           <kbd class="text-white text-6xl text-center h-20">J</kbd>
+           <span class="sound text-white text-sm text-center uppercase">snare</span>
        </div>
        
-       <div class="key" data-key="75">
-           <kbd>K</kbd>
-           <span class="sound">tom</span>
+       <div class="key flex flex-col w-20 border-white border-2 rounded cursor-pointer" data-key="75">
+           <kbd class="text-white text-6xl text-center h-20">K</kbd>
+           <span class="sound text-white text-sm text-center uppercase">tom</span>
        </div>
        
-       <div class="key" data-key="76">
-           <kbd>L</kbd>
-           <span class="sound">tink</span>
+       <div class="key flex flex-col w-20 border-white border-2 rounded cursor-pointer" data-key="76">
+           <kbd class="text-white text-6xl text-center h-20">L</kbd>
+           <span class="sound text-white text-sm text-center uppercase">tink</span>
        </div>
-   </div>
-
-
+     </div>
     <!-- Audio Files -->
     <audio src="sounds/clap.wav" data-key="65"></audio>
     <audio src="sounds/hihat.wav" data-key="83"></audio>

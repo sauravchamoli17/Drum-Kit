@@ -1,4 +1,4 @@
-// Play audio on keydown 
+// Play audio on keydown
 function playSound(e) {
     const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
     const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
@@ -16,7 +16,19 @@ function removeTransition(e) {
 
 //Array of Keys
 const keys = document.querySelectorAll('.key'); 
+
 //Loop over array of keys and remove class of playing after transition
 keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+
 //Play Sound whenever the key is pressed
-window.addEventListener('keydown',playSound);
+window.addEventListener('keydown', playSound);
+
+function addSound() {
+    const audio = document.querySelector(`audio[data-key="${this.dataset.key}"]`);
+    audio.currentTime = 0;
+    audio.play();
+    this.classList.add('playing');
+}
+
+// Play Sound on click on keys
+keys.forEach(key => key.addEventListener('click',addSound));
